@@ -1,0 +1,6 @@
+#tip calc
+total_bill = float(input("bill: "))
+no_of_persons= int(input("persons: "))
+tip_percentage = int(input("percentage of tip between 10,12,15: "))
+bill_perperson = round((total_bill/no_of_persons)*(1+tip_percentage/100) , 2)
+print("{:.2f}".format(bill_perperson))
